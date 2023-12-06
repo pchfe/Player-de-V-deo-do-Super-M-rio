@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Video</title>
+</head>
+<body>
+    <div class="principal">
+        <div class="video">
+            <div class="centro-video">
+                <span class="material-symbols-outlined voltar pular-video" onmouseover="mostrarBotao()">replay_10</span>
+                <div class="play-centro" onmouseover="mostrarBotao()">
+                    <span class="material-symbols-outlined play-tela">play_arrow</span>
+                </div>
+                <span class="material-symbols-outlined avancar pular-video" onmouseover="mostrarBotao()">forward_10</span>
+            </div>
+            <div class="logo">
+                <img class="logo-img" src="image/logo_mario.png">
+            </div>
+            <video src="video/Super Mario Bros.mp4" poster="image/logo_mario.png" onmouseover="mostrarBotao()" onmouseout="ocultarBotao()" onclick="pausarVideo()">
+                
+            </video>
+            
+            <div class="controle">
+                <span class="material-symbols-outlined" id="pause">pause</span>
+                <span class="material-symbols-outlined" id="acelerar">fast_forward</span>
+                <span class="material-symbols-outlined" id="play">play_arrow</span>
+                <span class="material-symbols-outlined" id="desacelerar">fast_rewind</span>
+                <span class="material-symbols-outlined" id="stop">stop</span>
+            </div>
+
+        </div>
+        <div class="nome-video">
+            <p>Você está assistindo:</p>            
+            <p class="filme">Super Mário Bros</p>            
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
